@@ -1,3 +1,6 @@
+Fork which uses [Phil Bowles]'(https://github.com/philbowles) variants of the dependencies.
+
+---
 
 <img src=https://github.com/eModbus/eModbus/blob/master/eModbusLogo.png width="33%" alt="eModbus">
 

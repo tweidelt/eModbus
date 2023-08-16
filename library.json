@@ -8,53 +8,54 @@
   "authors": [
     {
       "name": "Bert Melis",
-      "url": "https://github.com/bertmelis",
-      "maintainer": true
+      "url": "https://github.com/bertmelis"
     },
     {
       "name": "Michael Harwerth",
       "url": "https://github.com/Miq1",
-      "email": "miq1@gmx.de",
+      "email": "miq1@gmx.de"
+    },
+    {
+      "name": "Tobias Weidelt",
       "maintainer": true
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/eModbus/eModbus",
-    "branch": "master"
+    "url": "https://github.com/tweidelt/eModbus",
+    "branch": "main"
   },
   "dependencies": [
     {
-      "owner": "me-no-dev",
-      "name": "AsyncTCP",
-      "version": "*",
-      "platforms": ["espressif32"]
+      "platforms": "espressif8266",
+      "name": "ESPAsyncTCP",
+      "version": "https://github.com/philbowles/ESPAsyncTCP.git#2.0.1"
     },
     {
-      "owner": "me-no-dev",
-      "name": "ESPAsyncTCP",
-      "version": "*",
-      "platforms": ["espressif8266"]
+      "platforms": "espressif32",
+      "name": "AsyncTCP",
+      "version": "https://github.com/philbowles/AsyncTCP.git#0.0.1"
     },
     {
       "name": "custom-Ethernet",
       "version": "https://github.com/maxgerhardt/Ethernet.git",
-      "platforms": ["espressif32"]
+      "platforms": [
+        "espressif32"
+      ]
     }
   ],
   "export": {
-    "include":
-    [
-        "src/*.cpp",
-        "src/*.h",
-        "examples/*",
-        "Test/*",
-        ".gitignore",
-        "README.md",
-        "license.md",
-        "keywords.txt",
-        "library.properties",
-        "library.json"
+    "include": [
+      "src/*.cpp",
+      "src/*.h",
+      "examples/*",
+      "Test/*",
+      ".gitignore",
+      "README.md",
+      "license.md",
+      "keywords.txt",
+      "library.properties",
+      "library.json"
     ]
   },
   "frameworks": "arduino",
